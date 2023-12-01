@@ -9,20 +9,20 @@ class Factory{
     static factory=(modo)=>{
         if(modo === "memory"){
 return{
-xDao:new XMemoryDao(),
-userDao:"userMemoryDao"
+xDao: new XMemoryDao(),
+userDao: "userMemoryDao"
 }
         }
 if(modo === "sql"){
     return{
-        xDao:"xSqlDao",
-        userDao:"userSqlDao"
+        xDao: "xSqlDao",
+        userDao: "userSqlDao"
     }
  }
     if(modo === "mongo"){
         return{
-            xDao:"xMongodao",
-            userDao:"userMongoDao"
+            xDao: "xMongodao",
+            userDao: "userMongoDao"
         }
         }
     }
