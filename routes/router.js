@@ -1,12 +1,12 @@
 import { Router } from "express";
-import xRoutes from "./xRoutes.js";
+import votoRoutes from "./VotoRoutes.js";
 import { generalError } from "../Midleware/GeneralError.js";
 
 
 
 const router=Router()
 
-router.use("/x", xRoutes)
+router.use("/voto", votoRoutes)
 router.use(generalError)
 
 export default router

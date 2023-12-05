@@ -1,4 +1,4 @@
-import XMemoryDao from "./Memory/XMemoryDao.js"
+import VotoMemoryDao from "./Memory/VotoMemoryDao.js"
 
 
 class Factory{
@@ -9,22 +9,11 @@ class Factory{
     static factory=(modo)=>{
         if(modo === "memory"){
 return{
-xDao: new XMemoryDao(),
+votoDao: new VotoMemoryDao(),
 userDao: "userMemoryDao"
 }
         }
-if(modo === "sql"){
-    return{
-        xDao: "xSqlDao",
-        userDao: "userSqlDao"
-    }
- }
-    if(modo === "mongo"){
-        return{
-            xDao: "xMongodao",
-            userDao: "userMongoDao"
-        }
-        }
+
     }
 }
 
