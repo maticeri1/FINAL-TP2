@@ -9,8 +9,7 @@ class Factory{
     static factory=(modo)=>{
         if(modo === "memory"){
 return{
-votoDao: new VotoMemoryDao(),
-userDao: "userMemoryDao"
+votoDao: new VotoMemoryDao()
 }
         }
 
